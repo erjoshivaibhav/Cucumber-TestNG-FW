@@ -14,18 +14,18 @@ import io.cucumber.java.Scenario;
 
 public class BaseUtilities {
 	
-	public static WebDriver driver;
-	
-	public WebDriver driverInitilize() 
-	{
-		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
-		driver= new ChromeDriver();
-		driver.manage().window().maximize();
-		return driver;
-		
-	}
-	
+//	public static WebDriver driver;
+//	
+//	public WebDriver driverInitilize() 
+//	{
+//		
+//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
+//		driver= new ChromeDriver();
+//		driver.manage().window().maximize();
+//		return driver;
+//		
+//	}
+//	
 	public String getTelecomUrl() throws IOException {
 		
 		
@@ -39,11 +39,11 @@ public class BaseUtilities {
 		
 	}
 	
-	public void addScreenshot(Scenario scenario){
-		 
-	       final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-	       scenario.attach(screenshot, "image/png", "image"); 
-	 
-	 }
+//	public void addScreenshot(Scenario scenario){
+//		 
+//	       final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//	       scenario.attach(screenshot, "image/png", "image"); 
+//	 
+//	 }
 
 }
